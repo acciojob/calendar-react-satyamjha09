@@ -1,12 +1,58 @@
-h1 {
-    color: #27aedb;
-    text-align: center;
-    }
-    
-
-button{
-    color: #27aedb;
-    text-align: center;
-    justify-content: center;
+/* Container */
+.calendar-container {
+    display: flex;
+    flex-direction: column;
     align-items: center;
-}
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Heading */
+  #calendar-heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  /* Controls */
+  .calendar-controls {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .calendar-controls button,
+  .calendar-controls select,
+  #year-text,
+  #year-input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Year input */
+  #year-text {
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+  }
+  
+  #year-input {
+    width: 60px;
+    text-align: center;
+  }
+  
+  /* Calendar Table */
+  #calendar-table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  #calendar-table th, #calendar-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+  }
+  
